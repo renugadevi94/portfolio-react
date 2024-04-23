@@ -1,0 +1,134 @@
+.projects{
+    background: var(--second-bg-color);
+
+ }
+ .projects h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 4rem; 
+    
+ }
+ 
+ section{
+    background: var(--second-bg-color);
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+  }
+ .projects span{
+    margin-right: 2rem;
+ }
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 3rem;
+   margin-top: 3.5rem;
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px var(--main-color);
+    overflow: hidden;
+    display: flex;
+}
+.project-img{
+    width:250px;
+    height: 250px;
+    aspect-ratio: 1/1;
+}
+.project-box img{
+    width: 100%;
+    transition: 0.5s ease;
+    aspect-ratio: 1/1;
+}
+.project-box:hover img{
+   transform: scale(1.1);
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(240, 236, 29, 0.8), rgb(98, 209, 204));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+.project-layer h4{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.project-layer a{
+    margin-bottom: 1rem;
+}
+
+.btn-btn{
+    padding: 8px 10px;
+        
+    
+    font-size: 17px;
+    font-weight: 700;
+    color:black;
+    text-shadow: none;
+    border-radius: 2rem;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: o o 25px black;
+    
+    transition: 0.5s ease-in-out;
+    user-select: none;
+}
+.btn-btn:hover{
+    transform: scale(0.91);
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+}
+
+@media (max-width: 1285px){
+    html{
+        font-size: 55%;
+    }
+    .project-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+    .heading-project {
+       
+       margin-bottom: 10rem;
+    }
+}
+@media (max-width:991px){
+    
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .projects{
+        padding-bottom: 0rem;
+    }
+}
+@media (max-width:895px){
+    .projects h2{
+        margin-bottom: 6rem;
+    }
+    .project-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
