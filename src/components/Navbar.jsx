@@ -35,7 +35,7 @@ export const Navbar = () => {
           <a href="#skills" className="nav__link" onClick={() => scrollToSection("skills")}>Skills</a>
         </li>
         <li className="nav__list-item">
-          <a href="#projects" className="nav__link" onClick={() => scrollToSection("projects")}>Projects</a>
+          <a href="#portfolio" className="nav__link" onClick={() => scrollToSection("portfolio")}>Portfolio</a>
         </li>
         <li className="nav__list-item">
           <a href="#contact" className="nav__link" onClick={() => scrollToSection("contact")}>Contact</a>

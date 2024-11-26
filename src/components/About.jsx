@@ -8,7 +8,7 @@ const About = () => {
 
   const handleGetResume = () => {
     
-    window.open('https://drive.google.com/file/d/1Nc2EdmwC29VEGrX6yHE4AtgvmVurpuCN/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1iruZRhwx3lXly-0YGHxtZL3I7wJJfQxc/view?usp=sharing', '_blank');
   };
 
   return (
